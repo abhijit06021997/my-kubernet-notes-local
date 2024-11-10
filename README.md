@@ -91,7 +91,11 @@ minikubestart:- minikube start --nodes 3 -p (node name)
 eksctl create cluster --name my-cluster --node-type t2.micro --nodes 1 --region us-east-1 --nodegroup-name nodes-kubes
 
 STEPS:- ##install kubectl ##create role for instance to acess services from cli like eksfull ,system admi,ec2full. ##install aws cli ##
-##install eksctl from doc {run command msut be one by one }##add credential on cli##then run above command . 
+##install eksctl from doc {run command msut be one by one }##add credential on cli##then run above command.
+
+
+		#!!!!To delete Cluster!!!!11
+#$eksctl delete cluster --name clsuet-name --region us-east-1
 
 					!!!!!!!!Commands!!!!!!!!
 $kubectl exec -it (pod name)  [execute container in the pod]
